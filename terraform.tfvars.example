@@ -1,0 +1,35 @@
+# Identity and access parameters
+
+oci_base_identity = {
+  api_fingerprint      = ""
+  api_private_key_path = ""
+  compartment_name     = ""
+  compartment_id       = ""
+  tenancy_id           = ""
+  user_id              = ""
+}
+
+# ssh keys
+oci_base_ssh_keys = {
+  ssh_private_key_path = ""
+  ssh_public_key_path  = ""
+}
+
+oci_base_general = {
+  disable_auto_retries = false
+  label_prefix         = "base"
+  region               = "us-phoenix-1"
+}
+
+# networking
+
+oci_base_vcn = {
+  vcn_cidr               = "10.0.0.0/16"
+  vcn_dns_label          = "base"
+  vcn_name               = "base"
+  create_nat_gateway     = true
+  nat_gateway_name       = "nat"
+  create_service_gateway = true
+  service_gateway_name   = "sg"
+}
+
